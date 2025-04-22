@@ -20,7 +20,7 @@ function emailJs(){
 
     try {
       await emailjs.send(serviceID, templateID, datos);
-      alert("Gracias por contactarme");
+      alert("Gracias por contactarnos");
 
       
       if (nombre) {
