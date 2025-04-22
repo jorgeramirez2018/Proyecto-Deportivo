@@ -1,6 +1,6 @@
 var nombre = document.querySelector('.agenda-nombre')
 var hora = document.querySelector('.agenda-fecha')
-var lista = document.getElementById('lista-citas')
+var lista1 = document.getElementById('lista-citas')
 var botonAgregar = document.getElementById('agendar-btn')
 var botonModificar = document.getElementById('modificar-btn')
 
@@ -8,7 +8,7 @@ var citas = []
 var citaIndex = -1
 
 function mostrarCitas() {
-  lista.innerHTML = ''
+  lista1.innerHTML = ''
   for (let i = 0; i < citas.length; i++) {
     let item = document.createElement('li')
     item.innerHTML = '<span>' + citas[i].nombre + ' - ' + citas[i].hora + '</span>' +
@@ -16,7 +16,7 @@ function mostrarCitas() {
       '<button class="editar" onclick="editarCita(' + i + ')">Editar</button>' +
       '<button class="eliminar" onclick="eliminarCita(' + i + ')">Eliminar</button>' +
       '</div>'
-    lista.appendChild(item)
+    lista1.appendChild(item)
   }
 }
 

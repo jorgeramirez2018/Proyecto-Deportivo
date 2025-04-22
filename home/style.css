@@ -65,9 +65,10 @@
   }
   
   
-  header {
+  .container-header {
     background-image: linear-gradient(to right top, #fef4c0, #fce9a2, #fade84, #fad166, #fbc447, #fcba39, #feb02a, #ffa619, #ff9e21, #ff9528, #ff8d2f, #fe8535);
     padding: 0.2rem 0.2rem;
+    text-align: center;
   }
   
   .hero {
