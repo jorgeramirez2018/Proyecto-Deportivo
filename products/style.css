@@ -1,9 +1,7 @@
 .products {
     padding: 0 0 10rem 0;
     text-align: center;
-    margin: 0 4rem;
-    
-
+    margin: 0 4rem; 
 }
 
 .products h2 {
@@ -16,7 +14,7 @@
 
 .product-content {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
 }
 
