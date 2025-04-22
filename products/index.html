@@ -13,12 +13,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 
     <link rel="stylesheet" href="/products/style.css">
 </head>
 
 <body>
+    <div>
+        <ul>
+            <li class="submenu">
+                <box-icon type='solid' name='cart-alt' class="img-carrito"></box-icon>
+                <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Productos</a>
+                    <a href="#" id="comprar-carrito" class="btn-3">Comprar Productos</a>
+                </div>
+            </li>
+        </ul>
 
+    </div>
 
     <main class="products container" id="lista-1">
         <h2 class="titulo-product">Nuestros Productos Deportivos</h2>
@@ -56,9 +80,49 @@
                 <img src="https://tenismesa.es/5522-superlarge_default/xiom-ft-igre-blanca.jpg"
                     alt="Imagen de producto deprotivo">
                 <div class="product-text">
-                    <h3>Zapatillas XIOM FT Igre Blanca</h3>
+                    <h3>Zapatillas XIOM FT Igre Blancas</h3>
                     <div class="estrellas">⭐⭐⭐⭐⭐</div><br>
                     <p class="precio">$250.000</p>
+                    <a href="#" class="agregar-carrito btn-product" data-id="1">Comprar Ahora </a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://static1.mujerhoy.com/www/multimedia/202010/19/media/cortadas/zapatillas-mujer-blancas-nobrand-kFlG--1200x900@MujerHoy.jpg"
+                    alt="Imagen de producto deprotivo">
+                <div class="product-text">
+                    <h3>Zapatillas bonitas, cómodas y originales</h3>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div><br>
+                    <p class="precio">$360.000</p>
+                    <a href="#" class="agregar-carrito btn-product" data-id="1">Comprar Ahora </a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/11/zapatillas-pokemon-kanto-x-puma-2861649.jpg?tf=1200x900"
+                    alt="Imagen de producto deprotivo">
+                <div class="product-text">
+                    <h3>Nuevas zapatillas de Pokémon de la región de Kanto</h3>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div><br>
+                    <p class="precio">$280.000</p>
+                    <a href="#" class="agregar-carrito btn-product" data-id="1">Comprar Ahora </a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.sumitate.com.ar/img/articulos/2020/11/zapatillas_de_running_skechers_go_speed_3_imagen1.jpg"
+                    alt="Imagen de producto deprotivo">
+                <div class="product-text">
+                    <h3>Zapatillas De Running Skechers Go Speed 3</h3>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div><br>
+                    <p class="precio">$250.000</p>
+                    <a href="#" class="agregar-carrito btn-product" data-id="1">Comprar Ahora </a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://tenismesa.es/9157-superlarge_default/andro-shuffle-step-2-azul-blanco.jpg"
+                    alt="Imagen de producto deprotivo">
+                <div class="product-text">
+                    <h3>Zapatillas ANDRO Shuffle Step 2 Azul/Blanco</h3>
+                    <div class="estrellas">⭐⭐⭐⭐⭐</div><br>
+                    <p class="precio">$340.000</p>
                     <a href="#" class="agregar-carrito btn-product" data-id="1">Comprar Ahora </a>
                 </div>
             </div>
@@ -105,6 +169,7 @@
         </div>
     </main>
 
+    <script src="/products/script.js"></script>
 </body>
 
 </html>

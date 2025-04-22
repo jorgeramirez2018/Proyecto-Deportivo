@@ -45,8 +45,8 @@
 
 }
 
-.titulo-product{
-font-family: "Fredoka", sans-serif;
+.titulo-product {
+    font-family: "Fredoka", sans-serif;
 }
 
 .product p {
@@ -72,4 +72,79 @@ font-family: "Fredoka", sans-serif;
     background-color: #fD292F;
     box-shadow: 0 0 1.1rem #fD292F;
     transform: scale(1.1) translateY(-0.3rem);
+}
+
+.submenu {
+    position: relative;
+}
+
+
+.submenu #carrito {
+    display: none;
+}
+
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(3rem);
+    top: 100%;
+    z-index: 1;
+    background-color: #0000;
+    padding: 2rem;
+    min-width: 40rem;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    color: #282828;
+}
+
+.borrar {
+    background-color: #fe8535;
+    border-radius: 50%;
+    padding: .3rem 1rem;
+    color: #19191a;
+    font-weight: 800;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-2 {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .7rem 2.5rem;
+    border-radius: .5rem;
+    color: aliceblue;
+    background-color: #fe8535;
+    text-decoration: none;
+    transition: .3s ease;
+}
+.btn-2:hover {
+    background-color: #fD292F;
+    box-shadow: 0 0 1.1rem #fD292F;
+    transform: scale(1.1) translateY(-0.2rem);
+}
+
+.btn-3 {
+    margin-left: 5rem;
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .7rem 2.5rem;
+    border-radius: .5rem;
+    color: aliceblue;
+    background-color: #e6cb45;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.btn-3:hover {
+    background-color: #fD292F;
+    box-shadow: 0 0 1.1rem #fD292F;
+    transform: scale(1.1) translateY(-0.2rem);
 }
