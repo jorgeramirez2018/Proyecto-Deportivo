@@ -1,0 +1,125 @@
+:root {
+    --amarillo-claro: #FEF4C0;
+    --amarillo: #FDB10B;
+    --naranja: #FE8535;
+    --rojo-claro: #FD292F;
+    --rojo-oscuro: #B20000;
+  }
+
+
+  .titulo-voltix {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--amarillo-claro);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+    animation: slideIn 1s ease-out;
+  }
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .titulo-voltix {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: (--amarillo-claro); 
+    text-shadow: 0 0 8px rgba(214, 198, 196, 0.8), 0 0 12px rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.5rem;
+    position: relative;
+    display: inline-block;
+    animation: slideIn 1s ease-out;
+  }
+  
+  .titulo-voltix:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .titulo-voltix:hover {
+    color: #f46607 ;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .slogan-voltix {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.0rem;
+    font-weight: 500;
+    color: white;
+  }
+  body {
+    background-color: var(--amarillo-claro);
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  
+  header {
+    background-image: linear-gradient(to right top, #fef4c0, #fce9a2, #fade84, #fad166, #fbc447, #fcba39, #feb02a, #ffa619, #ff9e21, #ff9528, #ff8d2f, #fe8535);
+    padding: 0.2rem 0.2rem;
+  }
+  
+  .hero {
+    background-image: linear-gradient(to right top, #fef4c0, #fce9a2, #fade84, #fad166, #fbc447, #fcba39, #feb02a, #ffa619, #ff9e21, #ff9528, #ff8d2f, #fe8535);
+    color: white;
+    text-align: center;
+    padding: 0rem 0rem;
+    margin-bottom: 0;
+  }
+
+  .hero p {
+    font-size: large;
+    color: black;
+  }
+
+  .text-center {
+    border-color: (var(--rojo-claro));
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #FE8535;
+  }
+
+  
+  .btn-tienda {
+    background-color: var(--rojo-claro);
+    color: white;
+    border: none;
+  }
+  
+  .btn-tienda:hover {
+    background-color: var(--rojo-oscuro);
+  }
+
+  .carousel-inner img {
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  .carousel-item {
+    position: relative;
+  }
+  
+  .message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(228, 217, 217, 0.7);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
