@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff ;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #b20000;
+    box-shadow: 0 2px 5px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav-links a.active {
+    color: #FE8535;
+    position: relative;
+}
+
+.nav-links a.active::after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100;
+    height: 2px;
+    background-color: #fdb10b;
+} 
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa-solid.fa-solid.fa-magnifying-glass
+.fa-solid.fa-cart-shopping{
+    cursor: pointer;
+}
+
+.sing-in-btn{
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: #fdb10b;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.logo img{
+        height: 60px;
+        width: auto;    
+}
+
+/*footer*/
+footer{
+    background-color: #b20000;
+    color: #ffffff;
+    padding: 60px 30px 20px;
+
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0;
+    margin-top: 3rem;
+}
+
+.footer-section{
+    flex: 1 1 200px;
+}
+
+.footer-section h2 h3{
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+  font-size: 14px;
+  line-height: 1.6;
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.footer-section ul{
+    list-style: disc inside;
+}
+
+.footer-section a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom {
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    border-top: 1px solid #ffffff44;
+  }
+  
+  .footer-bottom .social-icons i {
+    font-size: 18px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
