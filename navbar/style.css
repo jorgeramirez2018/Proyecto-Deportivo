@@ -22,7 +22,6 @@ header{
     background-color: #b20000;
     box-shadow: 0 2px 5px;
 }
-
 .nav-links{
     display: flex;
     gap: 20px;
